@@ -126,11 +126,11 @@ It includes:
 
 ### Churn Analysis – Summary
 
-![Churn Analysis Summary](./dashboard/dashboardsummary.png)
+![Churn Analysis Summary](./dashboard/dashboard_summary.png)
 
 ### Churn Analysis – Prediction
 
-![Churn Prediction Dashboard](./dashboard/dashboardprediction.png)
+![Churn Prediction Dashboard](./dashboard/dashboard_prediction.png)
 
 ---
 
@@ -175,8 +175,8 @@ This transforms traditional customer reporting into a **predictive customer rete
 Customer-Churn-Prediction-Analytics/
 │
 ├── dashboard/
-│   ├── dashboardsummary.png
-│   └── dashboardprediction.png
+│   ├── dashboard_summary.png
+│   └── dashboard_prediction.png
 │
 ├── SQL/
 │   └── churn_analysis.sql
