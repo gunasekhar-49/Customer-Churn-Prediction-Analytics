@@ -1,148 +1,168 @@
 # Customer Churn Prediction Analytics
 
-An end-to-end **Customer Churn Prediction and Analytics** project that combines **SQL, Python, Machine Learning, and Power BI** to identify customers at risk of churn and provide actionable business insights.
+An end-to-end **Customer Churn Prediction and Analytics** project combining **SQL, Python, Machine Learning, and Power BI** to analyze customer churn and predict customers who are likely to leave.
 
 ## 📌 Project Overview
 
-Customer churn is a major challenge for businesses because losing existing customers directly impacts revenue.
+Customer churn is an important business problem because losing existing customers can reduce revenue and increase customer acquisition costs.
 
-This project develops a complete analytics pipeline to:
+This project analyzes customer data and builds a Machine Learning solution to identify potential churners. The results are then presented through an interactive Power BI dashboard.
 
-* Analyze customer behavior and churn patterns
-* Clean and transform customer data using SQL and Python
-* Build a Machine Learning model to predict potential churners
-* Identify customer segments with higher churn risk
-* Create an interactive Power BI dashboard for business analysis
-* Provide customer-level predictions that can support retention strategies
+### Project Objectives
+
+* Analyze customer churn patterns
+* Prepare and transform customer data using SQL and Python
+* Build a Machine Learning model for churn prediction
+* Identify customers predicted to churn
+* Analyze predicted churners by customer characteristics
+* Create an interactive Power BI dashboard
+* Generate business insights for customer retention
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology           | Purpose                                      |
-| -------------------- | -------------------------------------------- |
-| **Python**           | Data preprocessing and Machine Learning      |
-| **Pandas**           | Data manipulation and analysis               |
-| **Scikit-learn**     | Machine Learning                             |
-| **Random Forest**    | Customer churn prediction                    |
-| **SQL**              | Data extraction, transformation and analysis |
-| **Power BI**         | Interactive dashboard and visualization      |
-| **Jupyter Notebook** | Model development and analysis               |
+* **Python**
+* **Pandas**
+* **Scikit-learn**
+* **Random Forest Classifier**
+* **SQL**
+* **Power BI**
+* **Jupyter Notebook**
 
 ---
 
 ## 🔄 Project Workflow
 
 ```text
-Raw Customer Data
-       ↓
+Customer Data
+     ↓
 SQL Data Preparation
-       ↓
-Data Cleaning & Preprocessing
-       ↓
+     ↓
+Python Data Cleaning
+     ↓
 Feature Encoding
-       ↓
+     ↓
 Random Forest Model
-       ↓
+     ↓
 Customer Churn Prediction
-       ↓
+     ↓
 Predictions.csv
-       ↓
+     ↓
 Power BI Dashboard
-       ↓
-Business Insights & Customer Risk Analysis
+     ↓
+Business Insights
 ```
 
 ---
 
 ## 🤖 Machine Learning
 
-A **Random Forest Classifier** is used to predict whether a customer is likely to churn.
+A **Random Forest Classifier** is used to predict customer churn.
 
-The workflow includes:
+### Process
 
-1. Loading customer data
-2. Data cleaning
-3. Handling categorical variables
-4. Label encoding
-5. Feature preparation
-6. Training the Random Forest model
-7. Generating customer-level predictions
-8. Exporting predicted churners
-9. Analyzing predictions in Power BI
-
-The prediction output is stored in:
-
-**`Predictions.csv`**
+1. Load customer data
+2. Clean and preprocess the data
+3. Encode categorical features
+4. Prepare model features
+5. Train the Random Forest model
+6. Generate customer churn predictions
+7. Filter predicted churners
+8. Export predictions to `Predictions.csv`
+9. Analyze the predictions using Power BI
 
 ---
 
 ## 📊 Power BI Dashboard
 
-The Power BI dashboard contains two major views.
+The Power BI report contains two main dashboard pages.
 
 ### 1. Churn Analysis – Summary
 
-The summary dashboard provides an overview of:
+The summary dashboard analyzes overall customer behavior and churn patterns, including:
 
-* Total Customers
-* New Customers
-* Total Churn
-* Churn Rate
-* Churn by Gender
-* Churn by Age Group
-* Churn by State
-* Churn by Internet Type
-* Churn by Payment Method
-* Churn by Contract
-* Churn by Tenure
-* Churn Categories
-* Services Used
+* Total customers
+* New customers
+* Total churn
+* Churn rate
+* Churn by gender
+* Churn by age group
+* Churn by state
+* Churn by contract
+* Churn by payment method
+* Churn by tenure
+* Churn by internet type
+* Churn categories
 
 ### 2. Churn Analysis – Prediction
 
-The prediction dashboard focuses on customers identified as being at risk of churn.
+The prediction dashboard focuses on customers predicted to churn.
 
-It includes:
+It analyzes:
 
-* Predicted Churner Count
-* Female and Male predicted churners
-* Predicted churners by Age Group
-* Predicted churners by Marital Status
-* Predicted churners by Tenure
-* Predicted churners by State
-* Predicted churners by Payment Method
-* Predicted churners by Contract
-* Customer-level risk details
+* Predicted churner count
+* Predicted churners by gender
+* Predicted churners by age group
+* Predicted churners by marital status
+* Predicted churners by tenure
+* Predicted churners by state
+* Predicted churners by payment method
+* Predicted churners by contract
+* Customer-level prediction details
 
-### Dashboard Screenshots
+---
 
-#### Churn Analysis – Summary
+## 🖼️ Dashboard Screenshots
 
-![Churn Analysis Summary](dashboard/dashboard_summary.png)
+### Churn Analysis – Summary
 
-#### Churn Analysis – Prediction
+![Churn Analysis Summary](./dashboard/dashboard_summary.png)
 
-![Churn Prediction Dashboard](dashboard/dashboard_prediction.png)
+### Churn Analysis – Prediction
+
+![Churn Prediction Dashboard](./dashboard/dashboard_prediction.png)
+
+> If the images do not display, open the `dashboard` folder in this repository to view them directly.
 
 ---
 
 ## 📈 Key Results
 
-The dashboard provides a clear view of customer churn and identifies customers who may require retention attention.
+The Machine Learning model generated customer-level churn predictions that were integrated into Power BI for further analysis.
 
-Example dashboard metrics include:
+### Key dashboard metrics
 
-* **6,418** total customers
-* **1,732** total churned customers
-* **26.99%** overall churn rate
-* **378** predicted churners
+* **Total Customers:** 6,418
+* **Total Churned Customers:** 1,732
+* **Overall Churn Rate:** 26.99%
+* **Predicted Churners:** 378
 
-The prediction analysis enables businesses to move from simply understanding **why customers churn** to identifying **which customers may churn next**.
+The project moves beyond historical churn reporting by using Machine Learning to identify **customers who may be at risk of churn**.
 
 ---
 
-## 🗂️ Repository Structure
+## 💡 Business Value
+
+The project helps answer three key business questions:
+
+### What is happening?
+
+Identify the overall level and patterns of customer churn.
+
+### Why is it happening?
+
+Analyze churn across demographics, contracts, services, payment methods, tenure, and other customer attributes.
+
+### Who is likely to churn?
+
+Use Machine Learning predictions to identify customers who may require proactive retention efforts.
+
+This allows businesses to move from **reactive churn analysis to proactive customer retention**.
+
+---
+
+## 📁 Repository Structure
 
 ```text
 Customer-Churn-Prediction-Analytics/
@@ -152,7 +172,7 @@ Customer-Churn-Prediction-Analytics/
 │   └── dashboard_prediction.png
 │
 ├── SQL/
-│   └── customer_churn_analysis.sql
+│   └── churn_analysis.sql
 │
 ├── Churn Analysis.pbix
 ├── Prediction_Data.csv
@@ -164,59 +184,42 @@ Customer-Churn-Prediction-Analytics/
 
 ---
 
-## 📁 Project Files
+## 📂 Project Files
 
 ### `churn prediction.ipynb`
 
-Jupyter Notebook containing the Python data preprocessing, encoding, Machine Learning model development and prediction process.
+Contains Python data preprocessing, feature encoding, Random Forest model training, and churn prediction.
 
 ### `Churn Analysis.pbix`
 
-Interactive Power BI dashboard containing the churn analysis and prediction visualizations.
+Interactive Power BI report containing the churn analysis and Machine Learning prediction dashboards.
 
 ### `Prediction_Data.csv`
 
-Customer dataset used for prediction and analysis.
+Dataset used for customer prediction and analysis.
 
 ### `Predictions.csv`
 
-Output generated by the Machine Learning model containing predicted churn customers.
+Machine Learning output containing customer-level churn predictions.
 
 ### `SQL/`
 
-Contains SQL queries used for customer data analysis and preparation.
+Contains SQL queries used for data preparation and analysis.
 
 ### `dashboard/`
 
-Contains screenshots of the Power BI dashboards for quick viewing on GitHub.
-
----
-
-## 💡 Business Value
-
-The project helps businesses answer three important questions:
-
-**1. What is happening?**
-Analyze current customer churn and identify major churn patterns.
-
-**2. Why is it happening?**
-Analyze churn based on customer demographics, contracts, services, payment methods and tenure.
-
-**3. Who is likely to churn?**
-Use Machine Learning predictions to identify customers who may require proactive retention efforts.
-
-This transforms customer data into a **predictive retention strategy** rather than relying only on historical reporting.
+Contains Power BI dashboard screenshots so the dashboards can be viewed directly from GitHub.
 
 ---
 
 ## 🚀 Future Improvements
 
-* Deploy the prediction model as a web application
+* Deploy the churn prediction model as a web application
 * Automate the data pipeline
-* Add real-time customer churn scoring
-* Experiment with XGBoost and other advanced models
-* Add automated retention recommendations
-* Deploy the Power BI dashboard with scheduled data refresh
+* Add real-time churn scoring
+* Compare Random Forest with XGBoost and other models
+* Add automated customer retention recommendations
+* Automate Power BI data refresh
 
 ---
 
@@ -224,8 +227,7 @@ This transforms customer data into a **predictive retention strategy** rather th
 
 **Guna Sekhar**
 
-B.Tech – Computer Science Engineering
+**B.Tech – Computer Science Engineering**
 
-### Project Focus
-
-**Data Analytics | SQL | Python | Machine Learning | Power BI**
+**Project Focus:**
+Data Analytics | SQL | Python | Machine Learning | Power BI
