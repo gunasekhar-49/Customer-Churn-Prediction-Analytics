@@ -126,11 +126,11 @@ It includes:
 
 ### Churn Analysis – Summary
 
-![Churn Analysis Summary](./dashboard/dashboard_summary.png)
+[View Churn Analysis Summary](./dashboard/dashboard_summary.png)
 
 ### Churn Analysis – Prediction
 
-![Churn Prediction Dashboard](./dashboard/dashboard_prediction.png)
+[View Churn Prediction Dashboard](./dashboard/dashboard_prediction.png)
 
 ---
 
